@@ -1,0 +1,246 @@
+.academics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.academic-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--card-accent, #E8F5E9);
+  transition: var(--transition);
+}
+
+.academic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.academic-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.academic-emoji { font-size: 2.2rem; flex-shrink: 0; }
+
+.academic-level {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.academic-classes {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+}
+
+.academic-desc {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--text-medium);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.academic-subjects-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--secondary-dark);
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subject-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.subject-tag {
+  background: rgba(11,61,46,0.07);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Methodology */
+.methodology-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.methodology-img {
+  position: relative;
+}
+
+.methodology-img img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: block;
+}
+
+.method-highlight {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  padding: 20px 28px;
+  text-align: center;
+}
+
+.method-h-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.method-h-label {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+}
+
+.method-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.method-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.method-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 40px;
+}
+
+.method-item h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.method-item p {
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* Holistic Banner */
+.holistic-banner {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  padding: 72px 0;
+  text-align: center;
+}
+
+.holistic-banner h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: white;
+  margin-bottom: 12px;
+}
+
+.holistic-banner p {
+  color: rgba(255,255,255,0.75);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 36px;
+}
+
+.holistic-pillars {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.holistic-pill {
+  padding: 10px 22px;
+  border: 1.5px solid rgba(200,169,81,0.5);
+  border-radius: 50px;
+  color: var(--secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(200,169,81,0.1);
+  transition: var(--transition);
+}
+
+.holistic-pill:hover {
+  background: var(--secondary);
+  color: var(--primary-dark);
+  border-color: var(--secondary);
+}
+
+/* Activity Card */
+.activity-card {
+  text-align: center;
+  padding: 36px 24px;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.activity-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-bottom: 3px solid var(--secondary);
+}
+
+.activity-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(11,61,46,0.1), rgba(200,169,81,0.12));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin: 0 auto 18px;
+}
+
+.activity-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.activity-card p {
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .academics-grid { grid-template-columns: 1fr; }
+  .methodology-grid { grid-template-columns: 1fr; }
+  .methodology-img { order: -1; }
+}

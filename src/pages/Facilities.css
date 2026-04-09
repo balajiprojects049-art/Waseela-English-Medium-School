@@ -1,0 +1,136 @@
+/* Facility Row */
+.facility-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--border);
+}
+
+.facility-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.facility-row.reverse {
+  direction: rtl;
+}
+
+.facility-row.reverse > * {
+  direction: ltr;
+}
+
+.facility-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.facility-img-wrap img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.facility-img-wrap:hover img {
+  transform: scale(1.04);
+}
+
+.facility-icon-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background: var(--secondary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.facility-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.facility-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.facility-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.87rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-medium);
+}
+
+.facility-feat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Highlight cards */
+.highlight-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.highlight-card:hover {
+  background: rgba(255,255,255,0.14);
+  transform: translateY(-6px);
+}
+
+.highlight-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(200,169,81,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  margin: 0 auto 16px;
+}
+
+.highlight-card h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.highlight-card p {
+  font-size: 0.83rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .facility-row { grid-template-columns: 1fr; gap: 32px; }
+  .facility-row.reverse { direction: ltr; }
+  .facility-features { grid-template-columns: 1fr; }
+}
