@@ -43,13 +43,7 @@ export default function Navbar() {
           <div className="navbar-inner">
             {/* Logo */}
             <Link to="/" className="navbar-logo">
-              <div className="logo-icon">
-                <GraduationCap size={22} />
-              </div>
-              <div className="logo-text">
-                <span className="logo-name">Waseela</span>
-                <span className="logo-sub">English Medium School</span>
-              </div>
+              <img src="/Logo.png" alt="Waseela English Medium School" className="logo-img" />
             </Link>
 
             {/* Desktop Nav */}
@@ -96,11 +90,7 @@ export default function Navbar() {
           >
             <div className="mobile-menu-header">
               <Link to="/" className="navbar-logo">
-                <div className="logo-icon"><GraduationCap size={20} /></div>
-                <div className="logo-text">
-                  <span className="logo-name" style={{ color: 'white' }}>Waseela</span>
-                  <span className="logo-sub" style={{ color: 'rgba(255,255,255,0.6)' }}>English Medium School</span>
-                </div>
+                <img src="/logo.png" alt="Waseela English Medium School" className="logo-img" />
               </Link>
               <button onClick={() => setMenuOpen(false)} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>
                 <X size={24} />

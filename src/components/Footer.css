@@ -44,32 +44,13 @@
   gap: 10px;
 }
 
-.footer-logo-icon {
-  width: 40px;
-  height: 40px;
-  background: var(--secondary);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-dark);
-  flex-shrink: 0;
-}
-
-.footer-logo-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: white;
-  line-height: 1.1;
-}
-
-.footer-logo-sub {
-  font-size: 0.6rem;
-  color: rgba(255,255,255,0.5);
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+.footer-logo-img {
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
 }
 
 .footer-socials {

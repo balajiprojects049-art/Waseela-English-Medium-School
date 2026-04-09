@@ -37,22 +37,8 @@ export default function Preloader() {
         </div>
       </div>
 
-      <div className="preloader-logo">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-        >
-          Waseela
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', fontFamily: 'Poppins', fontWeight: 400 }}
-        >
-          English Medium School
-        </motion.div>
+      <div className="preloader-logo" style={{ marginTop: 10 }}>
+        <img src="/Logo.png" alt="Waseela Logo" style={{ height: 60, width: 'auto', objectFit: 'contain', background: 'white', padding: '8px 16px', borderRadius: '8px' }} />
       </div>
       <div className="preloader-bar">
         <div className="preloader-bar-fill" />

@@ -24,11 +24,7 @@ export default function Footer() {
             {/* Brand */}
             <div className="footer-brand">
               <div className="footer-logo">
-                <div className="footer-logo-icon"><GraduationCap size={20} /></div>
-                <div>
-                  <div className="footer-logo-name">Waseela</div>
-                  <div className="footer-logo-sub">English Medium School</div>
-                </div>
+                <img src="/Logo.png" alt="Waseela English Medium School" className="footer-logo-img" />
               </div>
               <p>Shaping young minds for a better future through quality education, discipline, and strong values since our founding.</p>
               <div className="footer-socials">
